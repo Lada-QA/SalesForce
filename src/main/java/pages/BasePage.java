@@ -11,8 +11,6 @@ public class BasePage {
     WebDriver driver;
     Actions actions;
 
-
-
     public static final String BASE_URL = "https://tms-c.lightning.force.com";
 
     public BasePage(WebDriver driver) {

@@ -18,7 +18,7 @@ public class ContextBarPage extends BasePage {
     WebElement textHeading;
 
     public void clickIconContextBar() {
-    actions.click(iconContextBar).build().perform();
+        actions.click(iconContextBar).build().perform();
     }
 
     public void clickLinkViewAll() {
@@ -26,7 +26,6 @@ public class ContextBarPage extends BasePage {
     }
 
     public String getTextHeaderModalPage() {
-    return textHeading.getText();
+        return textHeading.getText();
     }
-
 }
