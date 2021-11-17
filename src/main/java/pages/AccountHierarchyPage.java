@@ -12,7 +12,7 @@ public class AccountHierarchyPage extends BasePage {
 
     @FindBy(xpath = "//button[contains(@class,'slds-button')]//*[text()='View Account Hierarchy']")
     WebElement buttonViewAccountHierarchy;
-    @FindBy(linkText = "Automation Account")
+    @FindBy(xpath = "//*[contains(@class,'hierarchyTriggerCellLink')]")
     WebElement testAccount;
 
     public void clickButtonViewAccountHierarchy() {
@@ -20,7 +20,7 @@ public class AccountHierarchyPage extends BasePage {
         actions.click(buttonViewAccountHierarchy).build().perform();
     }
 
-    public String addNewAutomationAccount() {
+    public String getAddedNewAutomationAccount() {
         waitForElementLocated(testAccount, 10);
         return testAccount.getText();
     }

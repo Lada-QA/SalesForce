@@ -15,7 +15,7 @@ public class AccountTests extends BaseTest {
         newAccountModalPage.createTextArea("no cash", "Tverskaya street.22, app.12",
                 "1234 Main Street, Apartment 101");
         accountHierarchyPage.clickButtonViewAccountHierarchy();
-        Assert.assertEquals(accountHierarchyPage.addNewAutomationAccount(),"Automation Account");
+        Assert.assertEquals(accountHierarchyPage.getAddedNewAutomationAccount(),"Automation Account");
     }
 
     @Test

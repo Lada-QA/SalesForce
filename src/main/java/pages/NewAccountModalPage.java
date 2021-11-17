@@ -1,12 +1,12 @@
 package pages;
 
 import elements.InputField;
-import elements.TextAreaModal;
+import elements.TextArea;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class NewAccountModalPage extends BasePage{
+public class NewAccountModalPage extends BasePage {
 
     public NewAccountModalPage(WebDriver driver) {
         super(driver);
@@ -23,11 +23,12 @@ public class NewAccountModalPage extends BasePage{
     }
 
     public void createTextArea(String description, String billingStreet, String shippingStreet) {
-        new TextAreaModal(driver,"Description").writeText(description);
-        new TextAreaModal(driver, "Billing Street").writeText(billingStreet);
-        new TextAreaModal(driver,"Shipping Street").writeText(shippingStreet);
+        new TextArea(driver, "Description").writeText(description);
+        new TextArea(driver, "Billing Street").writeText(billingStreet);
+        new TextArea(driver, "Shipping Street").writeText(shippingStreet);
         clickSave();
     }
+
     public void clickSave() {
         saveButtonXpath.click();
     }

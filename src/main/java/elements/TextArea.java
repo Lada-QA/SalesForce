@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TextAreaModal {
+public class TextArea {
     WebDriver driver;
     String label;
 
-    public TextAreaModal(WebDriver driver, String label) {
+    public TextArea(WebDriver driver, String label) {
         this.driver = driver;
         this.label = label;
     }
